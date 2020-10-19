@@ -1,0 +1,21 @@
+.footer-wrapper {
+    color: #b9b9b9;
+  font-size: 12px;
+  line-height: 21px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 15px;
+
+}
+
+p {
+    color: #b9b9b9;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.footer-links, ul, li {
+    line-height: 13px;
+    cursor: pointer;
+} 
+

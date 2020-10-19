@@ -1,0 +1,110 @@
+<div> 
+  <app-ideas-header></app-ideas-header>
+    <br>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-8 mr-auto">
+          <div class="d-flex">
+            <div class="mr-5">
+              <h3>Welcome to your <br> dashboard, Lawal!</h3>
+            </div>
+            <div class="oval d-flex">
+              <span>
+                <img src="assets/images/Oval-play.png" class="oval-img mr-2" alt="">
+                <img src="assets/images/bitmap.png" class="bitmap-img" alt="">
+              </span>
+              <span>
+                <h6 style="color: #393977;">welcome <br>video</h6>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mr-auto">
+          <div class="row">
+            <div class="col-4 border-right p-3">
+              <h3>4/8</h3>
+              <h5 class="header mb-0">COURSE COPLETED</h5>
+            </div>
+            <div class="col-4 border-right p-3"> 
+              <h3>0</h3>
+              <h5 class="header mb-0">REFRESHERS DUE</h5>
+            </div>
+            <div class="col-4 p-3">
+              <h3>2</h3>
+              <h5 class="header mb-0">ON-GOING COURSES</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="my-3 font20 text-grey">On-going Courses</div>
+      <div class="table-responsive">
+        <table class="table no-wrap" id="myTable">
+            <tbody>
+                <tr class="my-5" *ngFor="let course of courseData">
+                    <td class="mx-3 no-wrap">
+                      <div class="mx-2">
+                        <div>
+                          <h5 class="header mb-0">COURSE TITLE</h5>
+                          <p class="value mt-1 mb-0">{{course.courseTitle}}</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="mx-2 d-flex justify-content-around align-items-center">
+                        <div class="mx-2">
+                          <p class="header mb-0">STARTED</p>
+                          <p class="value mt-1 mb-0 d-flex justify-content-center">{{course.started}}</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="mx-2 d-flex justify-content-around align-items-center">
+                        <div class="mx-2">
+                          <p class="header mb-0">DUE</p>
+                          <p class="value mt-1 mb0">{{course.due}}</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="mx-2 d-flex justify-content-around aligh-items-center">
+                        <div class="mx-2">
+                          <p class="header mb-0">PROGRESS</p>
+                          <progress class="progressBar" value="{{course.progress.toString()}}" max='100'></progress>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <button class="btn btn-outline-secondary btn-sm">continue</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+    <!-- Recent Discussion -->
+    <div class="container my-5">
+      <div class="font20 text-grey">Recent Discussions</div>
+        <div class="row section-content">
+          <div class="col-12 col-md-4 mt-3" *ngFor="let recentDiscussion of recentDiscussions">
+            <div class="bg-white px-4 pt-4 pb-2 box-shadow">
+              <div class="font14 mb-5">
+                I dont think anyone should be in charge of the monies that go to the
+                distribution of items in IDP camps. The funds should move directly
+                from the government to the said NGO in order to reduce the rate…
+              </div>
+              <p class="mb-0 text-blue font14">UCHENNA MADUNKWU</p>
+              <p class="text-grey font12">Feb 17, 2019</p>
+            </div>
+            <div class="bg-grey p-4 shadow-sm mb-5 font16">
+              Anti-Fraud and Anti-Bribery and Corruption Policy
+            </div>
+          </div>
+        </div>
+    </div>
+  <div class="container">
+  <app-ideas-footer></app-ideas-footer>
+  </div>
+</div>

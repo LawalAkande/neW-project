@@ -1,0 +1,220 @@
+<app-navbar></app-navbar>
+<section class="container my-4 d-body">
+  <div class="my-3 d-flex justify-content-between">
+    <div class="font20">
+      <i class="fa fa-arrow-left click" routerLink="../"></i>&#8592; Create New Courses
+    </div>
+    <div>
+      <button
+        class="btn btn-primary btn-sm mr-3"
+        data-toggle="modal"
+        data-target="#addModal"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</section>
+<div class="row">
+  <div class="col-lg-12 col-sm-12">
+    <ul class="container nav nav-pills justify-content-center tb">
+      <li class="nav- click">
+        <a 
+          class="nav-link "
+          routerLink="/Courses/CourseInformation"
+          [ngClass]="{'active' : step === 1}"
+        >
+          <span class="number">1</span> Course Information</a
+        >
+      </li>
+      <li class="nav-item click active">
+        <a 
+          class="nav-link" 
+          routerLink="/Courses/ModulesLessons"
+          [ngClass]="{'active' : step === 2}"
+        >
+          <span class="number">2</span> Modules & Lessons</a
+        >
+      </li>
+      <li class="nav-item click">
+        <a class="nav-link" routerLink="/Courses/AddCertificate"
+          ><span class="number">3</span>Add Certificate</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+<section class="container my-4 d-body">
+  <div class="row">
+    <div class="col-lg-3 col-sm-12 vertical-nav my-3">
+      <div class="border-radius px-2">
+        Discribe your course, give it an intuitive title, add course category,
+        and select the learning level required
+      </div>
+    </div>
+
+    <div class="col-lg-9 col-sm-12">
+      <form action="">
+        <div *ngIf="step === 1" class="bg-white px-4 py-1 bg-box-shadow">
+          <div class="my-4 d-flex">
+            <input
+              type="text"
+              class="common-input form-control"
+              placeholder="Course Title"
+              formControlName="name"
+            />
+            <span class="text-red font18">*</span>
+          </div>
+          <div class="my-4">
+            <div class="d-flex">
+              <textarea
+              class="common-input form-control"
+              placeholder="Course Description"
+              rows="5"
+            >
+            </textarea>
+            <span class="text-red font18">*</span>
+            </div>
+            <span class="text-grey font18">Max 1000 Chraracters</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div>
+                <div class="my-4 d-flex">
+                  <input
+                    type="text"
+                    class="common-input form-control"
+                    placeholder="Course Title"
+                    formControlName="name"
+                  />
+                  <span class="text-red font18">*</span>
+                </div>
+                <div class="my-4 d-flex">
+                  <select type="text" class="common-input form form-control">
+                    <option value="">Course Subcategory</option>
+                    <option></option>
+                  </select>
+                  <span class="text-red font18">*</span>
+                </div>
+                <div class="my-4 d-flex">
+                  <select type="text" class="common-input form-control">
+                    <option value="">Course Subcatecory</option>
+                    <option></option>
+                  </select>
+                  <span class="text-red font18">*</span>
+                </div>
+                <div class="my-4 d-flex">
+                  <select type="text" class="common-input form-control">
+                    <option value="">Topic</option>
+                    <option></option>
+                  </select>
+                  <span class="text-red font18">*</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="my-4 d-flex">
+                <select type="text" class="common-input form-control">
+                  <option value="">Course Level</option>
+                  <option></option>
+                </select>
+                <span class="text-red font18">*</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div *ngIf="step === 2" class="row" id="listing_pagination">
+          <div class="col-lg-12 col-sm-12">
+            <div class="bg-white p-4 py-1 bg-box-shadow">
+              <div>
+                <div class="justify-content-between d-flex px-3 align-items-center">
+                  <h5 class="font18">Introduction</h5>
+                  <div class="px-2">
+                    <span class="click">
+                      <img src="assets/images/pen.png" class="px-2"/>
+                    </span>
+                    <span class="click">
+                      <img src="assets/images/bin.png" class="px-2"/>
+                    </span>
+                  </div>
+                </div>
+                <hr />
+                <div class="px-3">
+                  <div class="d-flex align-items-center justify-content-between bg-grey border-radius my-3 px-3 py-2" *ngFor="let lesson of lessons">
+                    <div class="align-tems-center">
+                      <span>
+                        <img src="assets/images/menu-icon.png" alt="" class="mr-3">
+                      </span>
+                      <span>Lesson1</span>
+                    </div>
+                    <div class="click">
+                      <button class="header btn">DELETE</button>
+                      <button class="header btn">EDIT</button>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-outline-primary btn-sm mr-3"
+                    data-toggle="modal"
+                    data-target="#addModal"
+                  >
+                    Add Lesson
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="my-3 d-flex justify-content-between">
+              <div class="font20">
+                <button
+                  class="btn bg-green rounded-circle btn-sm mr-3"
+                  data-toggle=""
+                  data-target=""
+                >
+                  +
+                </button> Add New Module
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="container mx-2">
+        <div class="my-3 d-flex justify-content-between">
+          <div class="font20">
+            <button
+              class="btn btn-outline-primary btn-sm mr-3"
+              data-toggle="modal"
+              data-target="#addModal"
+              (click)=cancel()
+            >
+              back
+            </button>
+          </div>
+          <div>
+            <button
+              class="btn btn-primary btn-sm mr-3"
+              data-toggle="modal"
+              data-target="#addModal"
+              (click)=next()
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+
+</section>
+<div class="footer-wrapper container">
+  <hr />
+  <app-footer></app-footer>
+</div>
+
+
+

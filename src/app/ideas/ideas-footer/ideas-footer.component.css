@@ -1,0 +1,18 @@
+p {
+    color: #b9b9b9;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.footer-link {
+    line-height: 13px;
+    cursor: pointer;
+    color: #b9b9b9;
+    text-decoration: underline;
+
+} 
+
+hr {
+    background-color: #393977;
+}
+

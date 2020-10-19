@@ -1,0 +1,82 @@
+
+.nav-pills {
+    background: #1CB4AE;
+    border-radius: 50px;
+    padding: 0.6rem;
+}
+
+.nav-link {
+    color: #fff;
+    background-color: transparent;
+    opacity: 0.5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.number {
+    padding: 4px 9px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 1rem;
+    color:  #1CB4AE;
+}
+
+.nav-link.active{
+    color: #fff;
+    background-color: transparent;
+    opacity: 1;    
+}    
+
+.btn-primary {
+    text-transform: capitalize;
+    background: #1CB4AE;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    height: 32px;
+    padding: 5px 20px;          
+        
+}
+
+.btn-primary:hover {
+    background-color: darken(#277DB1, 20);
+}   
+
+.text-red {
+    color: red;
+}
+
+.btn-outline-primary {
+    text-transform: capitalize;
+    border: 1px solid #277DB1;
+    background-color: white;
+    color: #277DB1;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px 20px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1CB4AE;
+    color: #fff;
+  }
+
+.common-input {
+    border-radius: 30px;
+}
+
+.header {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: capitalize;
+    color: #B9B9B9;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.rounded-circle {
+    background-color: #1CB4AE;
+    color: #fff;
+}

@@ -1,0 +1,51 @@
+export const courseData = [
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 64,
+        duration : '30mins',
+        score : 44,
+    },
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 100,
+        duration : '30mins',
+        score : 34,
+    },
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 100,
+        duration : '30mins',
+        score : 34,
+    },
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 100,
+        duration : '30mins',
+        score : 34,
+    },
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 100,
+        duration : '30mins',
+        score : 34,
+    },
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 100,
+        duration : '30mins',
+        score : 34,
+    },
+    {
+        title : 'Some title',
+        date : new Date().toLocaleDateString(),
+        progress : 100,
+        duration : '30mins',
+        score : 34,
+    },
+];

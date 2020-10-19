@@ -1,0 +1,36 @@
+<div>
+  <app-ideas-header></app-ideas-header>
+  <!-- card layout -->
+  <div class="container coursePage">
+    <div class="tabs">
+      <p (click)="renderNewTab()">Due</p>
+      <p (click)="renderNewTab()" class="activeTab">All Courses</p>
+      <p (click)="renderNewTab()">Completed</p>
+    </div>
+    <hr>
+      <div class="row">
+        <div *ngFor="let course of courseData" class="col-12 col-md-3">
+          <div class="card mb-3">
+            <div class="card-img">
+              <img class="card-img-top" src="/assets/images/course-bg.png" alt="Card-image-cap">
+              <div class="course-duration p-1">{{course.duration}}</div>
+            </div>
+            <div class="card-body">
+              <div>{{course.title}}</div>
+              <div class="flex-sp-btw mt-4">
+                <div>
+                  <div class="fadeText">Due</div>
+                  <p class="">{{course.date}}</p>
+                </div>
+                <div>
+                  <div class="fadeText">progress</div>
+                  <progress class="progressBar" value={{course.progress.toString()}} max='100'></progress>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <app-ideas-footer></app-ideas-footer>
+</div>
+  

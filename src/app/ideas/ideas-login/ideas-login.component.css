@@ -1,0 +1,30 @@
+/* body {
+    height: 100vh;
+} */
+.row {
+    height: 100vh;
+}
+.img-bg {
+    background: url(../../../assets/images/side-bg.svg) center/cover no-repeat;
+   
+}
+
+.form-container {
+    width: 500px;
+    /* padding: 0 30px; */
+}
+
+.btn-primary {
+    text-transform: capitalize;
+    background: #1CB4AE;
+    font-size: 12px;
+    text-align: center;
+    height: 32px;
+    padding: 5px 50px;          
+}
+
+.login-link {
+    text-transform: capitalize;
+    color: #1CB4AE;
+    font-size: 14px;
+}
