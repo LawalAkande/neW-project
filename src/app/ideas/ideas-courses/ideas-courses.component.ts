@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-// import { isMainThread } from 'worker_threads';
 import { CourseResponseDTO } from '../models';
-// import { courseData } from './ideas-courses-data';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
 
 
 @Component({
@@ -11,56 +15,54 @@ import { CourseResponseDTO } from '../models';
 })
 export class IdeasCoursesComponent implements OnInit {
   courses: CourseResponseDTO[] = [];
-  // currentDate = new Date();
-  // courseData;
    courseData = [
     {
-        title : 'Some title',
+        title : 'Code of Conduct',
         date : new Date().toLocaleDateString(),
         progress : 64,
-        duration : '30mins',
+        duration : '40 Mins',
         score : 44,
     },
     {
-        title : 'Some title',
+        title : 'Plan International of Nigeria Personel Manual',
         date : new Date().toLocaleDateString(),
         progress : 10,
-        duration : '30mins',
+        duration : '32 Mins',
         score : 34,
     },
     {
-        title : 'Some title',
+        title : 'Anti-fraud Anti Bribry and Corruption',
         date : new Date().toLocaleDateString(),
         progress : 50,
-        duration : '30mins',
+        duration : '26 Mins',
         score : 34,
     },
     {
-        title : 'Some title',
+        title : 'Global Health and Safety',
         date : new Date().toLocaleDateString(),
         progress : 100,
-        duration : '30mins',
+        duration : '40 Mins',
         score : 34,
     },
     {
-        title : 'Some title',
+        title : 'Child Protection',
         date : new Date().toLocaleDateString(),
         progress : 77,
-        duration : '30mins',
+        duration : '32 Mins',
         score : 34,
     },
     {
-        title : 'Some title',
+        title : 'Information Communication and Technology (ICT) Policy for...',
         date : new Date().toLocaleDateString(),
         progress : 100,
-        duration : '30mins',
+        duration : '13 Mins',
         score : 34,
     },
     {
-        title : 'Some title',
+        title : 'Harassment, Bullying & Discrimination',
         date : new Date().toLocaleDateString(),
         progress : 56,
-        duration : '30mins',
+        duration : '26 Mins',
         score : 34,
     },
 ];
@@ -71,7 +73,7 @@ export class IdeasCoursesComponent implements OnInit {
   }
 
   renderNewTab(): void {
-  console.log('click me boy :(');
+  console.log('click me boy');
   }
 
 }

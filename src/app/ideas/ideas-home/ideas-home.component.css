@@ -10,8 +10,6 @@
 tr {
     background-color: #fff;
     outline: none;
-    height: 60px !important;
-    background: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
     border-radius: 6px;
 }
@@ -22,11 +20,6 @@ td {
     vertical-align: middle;
 }
 
-/* .img{
-    width: 50px;
-    height: 50px;
-} */
-
 .header {
     font-size: 12px;
     line-height: 14px;
@@ -34,12 +27,27 @@ td {
     color: #B9B9B9;
 }
 
+.progress {
+    background: #EAEAEA;
+    border-radius: 5px;
+    width: 187px;
+    height: 8px;
+}
+
+.progressbar {
+    background-color: #393977;
+    border-radius: 5px;
+    width: 50px;
+    height: 8px;
+}
+
 .btn-outline-secondary {
     text-transform: capitalize;
+    width: 90px;
     border: 1px solid #393977;
     background-color: white;
     color: #393977;
-    border-radius: 30px;
+    border-radius: 18px;
 }
 
 .btn-outline-secondary:hover {
@@ -47,18 +55,34 @@ td {
     color: #fff;
 }
 
-/* .progressBar {
-    font-size: 15px;
-    height: 10px;
-    
-} */
-
-.oval-img {
-    position: relative;
+.font12 {
+    font-size: 12px;
 }
 
-.bitmap-img {
-    position:absolute
-}
-            
+.font14 {
+    font-size: 14px;
+    background-image: url('../../../assets/images/cardBackground.png');
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+.font15 {
+    font-size: 14px;
+    color:rgba(57, 57, 119, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+.date {
+    font-size: 16;
+    color: rgba(72, 72, 72, 1);
+
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 33px;
+    color: #303030;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

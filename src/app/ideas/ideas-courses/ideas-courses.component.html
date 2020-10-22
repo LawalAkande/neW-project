@@ -1,6 +1,6 @@
 <div>
   <app-ideas-header></app-ideas-header>
-  <!-- card layout -->
+  
   <div class="container coursePage">
     <div class="tabs">
       <p (click)="renderNewTab()">Due</p>
@@ -16,15 +16,17 @@
               <div class="course-duration p-1">{{course.duration}}</div>
             </div>
             <div class="card-body">
-              <div>{{course.title}}</div>
-              <div class="flex-sp-btw mt-4">
+              <div class="card-title">{{course.title}}</div>
+              <div class="flex-sp-btw">
                 <div>
-                  <div class="fadeText">Due</div>
-                  <p class="">{{course.date}}</p>
+                  <div class="header">DUE</div>
+                  <p class="courseDate">{{course.date | date:'mediumDate'}}</p>
                 </div>
                 <div>
-                  <div class="fadeText">progress</div>
-                  <progress class="progressBar" value={{course.progress.toString()}} max='100'></progress>
+                  <div class="header">PROGRESS</div>
+                  <div class="progress my-2">
+                    <div class="progressbar"></div>
+                  </div>
                 </div>
             </div>
           </div>
@@ -34,3 +36,5 @@
   <app-ideas-footer></app-ideas-footer>
 </div>
   
+   
+   

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ideas-header',
@@ -6,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ideas-header.component.css']
 })
 export class IdeasHeaderComponent implements OnInit {
+  userName = 'Lawal';
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  // setPage(title: string) {
+  //   this.
+  // }
   ngOnInit(): void {
   }
 
