@@ -18,7 +18,7 @@
       <ul class="nav nav-tab ml-auto mr-auto mt-2 ">
         <li class="">
           <a
-            class="nav-link"
+            class="text-grey px-4"
             routerLink="/ideasHome"
             routerLinkActive="active current"
             data-toggle="tab"
@@ -27,7 +27,7 @@
         </li>
         <li>
           <a
-            class="nav-link"
+            class="text-grey px-4"
             routerLink="/ideasCourses"
             routerLinkActive="active current"
             data-toggle="tab"
@@ -37,8 +37,9 @@
         </li>
         <li>
           <a 
-            class="nav-link" 
-            routerLink="/" 
+            class="text-grey px-4" 
+            routerLink="/ideasTestAndResults" 
+            routerLinkActive="active current"
             data-toggle="tab"
             >TEST & RESULTS</a
           >
@@ -47,14 +48,16 @@
       <ul class="navbar-nav drop-down mt-2 mt-lg-0">
         <li class="nav-item dropdown mt-2">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle header" 
+            style="color: #484848;
+            font-family: Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
             href="#"
             id="navbarDropdownMenuLink"
             data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+            
           >
-            Hi, {{ userName }}
+            Hi, {{ userName |uppercase }}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="profile">Profile</a>

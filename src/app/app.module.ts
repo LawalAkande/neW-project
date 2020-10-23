@@ -23,6 +23,7 @@ import { IdeasHeaderComponent } from './ideas/ideas-header/ideas-header.componen
 import { IdeasFooterComponent } from './ideas/ideas-footer/ideas-footer.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { TestResultsComponent } from './ideas/test-results/test-results.component';
 
 const appRoute: Routes = [
   {
@@ -48,7 +49,8 @@ const appRoute: Routes = [
     // IdeasHomeComponent,
     IdeasHeaderComponent,
     IdeasFooterComponent,
-    RoutingComponents
+    RoutingComponents,
+    // TestResultsComponent
   ],
   imports: [
     BrowserModule,

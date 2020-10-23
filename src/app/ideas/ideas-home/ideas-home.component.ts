@@ -3,6 +3,10 @@ import { CourseResponseDTO } from './../models';
 import { IdeasHeaderComponent } from '../ideas-header/ideas-header.component';
 import { IdeasFooterComponent } from '../ideas-footer/ideas-footer.component';
 import { Component, OnInit } from '@angular/core';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+
+
 
 
 

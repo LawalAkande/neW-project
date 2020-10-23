@@ -1,3 +1,4 @@
+import { TestResultsComponent } from './ideas/test-results/test-results.component';
 import { IdeasCoursesComponent } from './ideas/ideas-courses/ideas-courses.component';
 import { IdeasHomeComponent } from './ideas/ideas-home/ideas-home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -10,7 +11,9 @@ const routes: Routes = [
   },
   {
     path: 'ideasCourses', component: IdeasCoursesComponent
-
+  },
+  {
+    path: 'ideasTestAndResults', component: TestResultsComponent
   }
 ];
 
@@ -19,5 +22,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const RoutingComponents = [IdeasHomeComponent, IdeasCoursesComponent];
+export const RoutingComponents = [IdeasHomeComponent, IdeasCoursesComponent, TestResultsComponent];
 

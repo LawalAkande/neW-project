@@ -5,27 +5,18 @@
     color: #B9B9B9;
 }
 
-/* .nav-tab>li.active>a, .nav-tabs>li.active>a:hover, .nav-tab>li.active>a:focus {
-    cursor: default;
-    padding-bottom: 26px;
-    border-bottom: 5px solid #393977;
-} */
 .active{
     height: 4px;
     color: #393977;
     cursor: pointer;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     border-bottom: 5px solid #393977;
 }
-/* .active{
-    width: 50px;
-    position: absolute;
-    height: 4px;
-    top: 35px;
-    color: #393977;
-    cursor: pointer;
-    padding-bottom: 35px;
-    border-bottom: 5px solid #393977;
-} */
+
+.text-grey {
+    color: rgba(185, 185, 185, 1);
+    text-decoration: none;
+}
+
 
   

@@ -22,18 +22,27 @@
                   <div class="header">DUE</div>
                   <p class="courseDate">{{course.date | date:'mediumDate'}}</p>
                 </div>
-                <div>
+                <div *ngIf="!course.score; else displayScore">
                   <div class="header">PROGRESS</div>
                   <div class="progress my-2">
                     <div class="progressbar"></div>
                   </div>
                 </div>
+                <ng-template #displayScore>
+                  <div class="score p-1 text-white">
+                    <div class="header text-white">SCORE</div>
+                    <div class="scorePercentage">{{course.score}}</div>
+                  </div>
+                </ng-template>
+              </div>
             </div>
           </div>
         </div>
       </div>
   </div>
-  <app-ideas-footer></app-ideas-footer>
+  <div class="container">
+    <app-ideas-footer></app-ideas-footer>
+    </div>
 </div>
   
    
