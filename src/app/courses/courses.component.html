@@ -6,11 +6,20 @@
     </div>
     <div>
       <button
+        *ngIf="step === 1"
         class="btn btn-primary btn-sm mr-3"
         data-toggle="modal"
         data-target="#addModal"
       >
         Continue
+      </button>
+      <button
+        *ngIf="step === 2"
+        class="btn btn-primary btn-sm mr-3"
+        data-toggle="modal"
+        data-target="#addModal"
+      >
+        Next
       </button>
     </div>
   </div>
@@ -49,8 +58,8 @@
   <div class="row">
     <div class="col-lg-3 col-sm-12 vertical-nav my-3">
       <div class="border-radius px-2">
-        Discribe your course, give it an intuitive title, add course category,
-        and select the learning level required
+        Discribe your course, give it <br>an intuitive title, add course <br>category,
+        and select the<br> learning level required
       </div>
     </div>
 
@@ -76,7 +85,7 @@
             </textarea>
             <span class="text-red font18">*</span>
             </div>
-            <span class="text-grey font18">Max 1000 Chraracters</span>
+            <span class="text-grey font18 p-4">Max 1000 Chraracters</span>
           </div>
           <div class="row">
             <div class="col">
@@ -92,7 +101,7 @@
                 </div>
                 <div class="my-4 d-flex">
                   <select type="text" class="common-input form form-control">
-                    <option value="">Course Subcategory</option>
+                    <option value="">Course Category</option>
                     <option></option>
                   </select>
                   <span class="text-red font18">*</span>
@@ -120,6 +129,9 @@
                   <option></option>
                 </select>
                 <span class="text-red font18">*</span>
+              </div>
+              <div class="my-4">
+              <span class="font18" style="font-size: 12px;">Cannot find the appropriate<br> category? <a class="login-link"> Manage Categories</a></span>
               </div>
             </div>
           </div>
@@ -184,16 +196,18 @@
         <div class="my-3 d-flex justify-content-between">
           <div class="font20">
             <button
+              *ngIf="step === 1"
               class="btn btn-outline-primary btn-sm mr-3"
               data-toggle="modal"
               data-target="#addModal"
               (click)=cancel()
             >
-              back
+              Cancel
             </button>
           </div>
           <div>
             <button
+              *ngIf="step === 1"
               class="btn btn-primary btn-sm mr-3"
               data-toggle="modal"
               data-target="#addModal"
@@ -207,9 +221,6 @@
       
     </div>
   </div>
-
-  
-
 </section>
 <div class="footer-wrapper container">
   <hr />
