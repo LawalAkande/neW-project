@@ -63,26 +63,21 @@ td {
     font-size: 14px;
     background-image: url('../../../assets/images/cardBackground.png');
     background-repeat: no-repeat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
 .font15 {
     font-size: 14px;
     color:rgba(57, 57, 119, 1);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 .date {
     font-size: 16;
     color: rgba(72, 72, 72, 1);
-
 }
 
 h3 {
     font-size: 28px;
     line-height: 33px;
     color: #303030;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }

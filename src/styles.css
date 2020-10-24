@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+@font-face {
+  font-family: 'Museo Sans';
+  src: url(./fonts/Fonts/MuseoSans_500.otf);
+}
+
 body {
+    font-family: 'Museo Sans' !important;
     background-color: ghostwhite;
     overflow-x: hidden;
 }
