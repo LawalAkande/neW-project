@@ -2,14 +2,15 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 @font-face {
-  font-family: 'Museo Sans';
+  font-family: 'Museo sanS';
   src: url(./fonts/Fonts/MuseoSans_500.otf);
 }
 
+
 body {
-    font-family: 'Museo Sans' !important;
-    background-color: ghostwhite;
-    overflow-x: hidden;
+  font-family: 'Museo Sans' !important;
+  background-color: ghostwhite;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -30,5 +31,31 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #1CB4AE; 
   }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.font11 {
+  font-size: 11px !important;
+}
+
+.font12 {
+  font-size: 12px !important;
+}
+
+.font14 {
+  font-size: 14px !important;
+}
+
+.font16 {
+  font-size: 16px !important;
+}
+
+.font18 {
+  font-size: 18px !important;
+}
+
+.font20 {
+  font-size: 20px !important;
+}
+
+.bg-grey {
+  background: #F5F6F7 !important;
+}

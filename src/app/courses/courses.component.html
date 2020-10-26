@@ -1,13 +1,14 @@
 <app-navbar></app-navbar>
-<section class="container my-4 d-body">
-  <div class="my-3 d-flex justify-content-between">
-    <div class="font20">
-      <i class="fa fa-arrow-left click" routerLink="../"></i>&#8592; Create New Courses
-    </div>
+<section class="container my-4 ">
+  <div class="d-flex justify-content-between">
+    <!-- <div class="font20">
+    </div> -->
+    <span class="font20" routerLink="../"> <img src="assets/images/Group 269.png" /> &nbsp;Create New Courses</span>
+
     <div>
       <button
         *ngIf="step === 1"
-        class="btn btn-primary btn-sm mr-3"
+        class="btn btn-primary btn-sm"
         data-toggle="modal"
         data-target="#addModal"
       >
@@ -15,9 +16,10 @@
       </button>
       <button
         *ngIf="step === 2"
-        class="btn btn-primary btn-sm mr-3"
+        class="btn btn-primary btn-sm"
         data-toggle="modal"
         data-target="#addModal"
+        style="width: 91px;"
       >
         Next
       </button>
@@ -26,8 +28,8 @@
 </section>
 <div class="row">
   <div class="col-lg-12 col-sm-12">
-    <ul class="container nav nav-pills justify-content-center">
-      <li class="nav- click">
+    <ul class="container nav nav-pills justify-content-center" >
+      <li class="nav-item">
         <a 
           class="nav-link "
           routerLink="/Courses/CourseInformation"
@@ -36,7 +38,7 @@
           <span class="number">1</span> Course Information</a
         >
       </li>
-      <li class="nav-item click active">
+      <li class="nav-item active">
         <a 
           class="nav-link" 
           routerLink="/Courses/ModulesLessons"
@@ -45,7 +47,7 @@
           <span class="number">2</span> Modules & Lessons</a
         >
       </li>
-      <li class="nav-item click">
+      <li class="nav-item">
         <a class="nav-link" routerLink="/Courses/AddCertificate"
           ><span class="number">3</span>Add Certificate</a
         >
@@ -54,10 +56,10 @@
   </div>
 </div>
 
-<section class="container my-4 d-body">
+<section class="container my-5">
   <div class="row">
-    <div class="col-lg-3 col-sm-12 vertical-nav my-3">
-      <div class="border-radius px-2">
+    <div class="col-lg-3 col-sm-12 mt-2 font18">
+      <div class="div-discribe">
         Discribe your course, give it <br>an intuitive title, add course <br>category,
         and select the<br> learning level required
       </div>
@@ -78,19 +80,18 @@
           <div class="my-4">
             <div class="d-flex">
               <textarea
-              class="common-input form-control"
-              placeholder="Course Description"
-              rows="5"
-            >
-            </textarea>
-            <span class="text-red font18">*</span>
+                class="common-input form-control"
+                rows="5"
+                placeholder="Course Description"
+              ></textarea>
+              <span class="text-red font18">*</span>
             </div>
-            <span class="text-grey font18 p-4">Max 1000 Chraracters</span>
+            <span class="text-grey font12 pl-3">Max 1000 Chraracters</span>
           </div>
           <div class="row">
             <div class="col">
               <div>
-                <div class="my-4 d-flex">
+                <div class=" d-flex">
                   <input
                     type="text"
                     class="common-input form-control"
@@ -123,7 +124,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="my-4 d-flex">
+              <div class=" d-flex">
                 <select type="text" class="common-input form-control">
                   <option value="">Course Level</option>
                   <option></option>
@@ -131,7 +132,7 @@
                 <span class="text-red font18">*</span>
               </div>
               <div class="my-4">
-              <span class="font18" style="font-size: 12px;">Cannot find the appropriate<br> category? <a class="login-link"> Manage Categories</a></span>
+              <span class="font12">Cannot find the appropriate<br> category? <a class="login-link"> Manage Categories</a></span>
               </div>
             </div>
           </div>
@@ -181,13 +182,13 @@
             <div class="my-3 d-flex justify-content-between">
               <div class="font20">
                 <button
-                  style="font-size: 18px;"
+                  
                   class="btn bg-green rounded-circle btn-sm mr-3"
                   data-toggle=""
                   data-target=""
                 >
-                  +
-                </button> Add New Module
+                  <img src="assets/images/Vector.svg" />
+                </button><span class="font16">Add New Module</span>
               </div>
             </div>
           </div>
