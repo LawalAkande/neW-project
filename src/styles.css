@@ -59,3 +59,7 @@ body {
 .bg-grey {
   background: #F5F6F7 !important;
 }
+
+.text-grey {
+  color: rgba(185, 185, 185, 1) !important;
+}

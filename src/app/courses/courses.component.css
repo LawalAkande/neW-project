@@ -30,6 +30,8 @@
 .btn-primary {
     text-transform: capitalize;
     background: #1CB4AE;
+    border: 1px solid #1CB4AE;
+
     border-radius: 25px;
     font-size: 12px;
     text-align: center;
@@ -41,6 +43,8 @@
 
 .btn-primary:hover {
     background-color: darken(#277DB1, 20);
+    border: 1px solid #1CB4AE;
+
 }   
 
 .text-red {
@@ -49,9 +53,9 @@
 
 .btn-outline-primary {
     text-transform: capitalize;
-    border: 1px solid #277DB1;
+    border: 1px solid #1CB4AE;
     background-color: white;
-    color: #277DB1;
+    color: #1CB4AE;
     width: 116px;
     border-radius: 25px;
     font-size: 12px;
