@@ -10,10 +10,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-// import { DashboardComponent } from './dashboard/dashboard.component';
 import { CoursesComponent } from './courses/courses.component';
 import { LogingComponent } from './loging/loging.component';
-// import { CourseInformationComponent } from './courses/course-information/course-information.component';
 import { CoursesService } from './courses.service';
 import { FooterComponent } from './footer/footer.component';
 // import { IdeasCoursesComponent } from './ideas/ideas-courses/ideas-courses.component';
@@ -26,9 +24,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { TestResultsComponent } from './ideas/test-results/test-results.component';
 
 const appRoute: Routes = [
-  // {
-  //   path: '', component: DashboardComponent
-  // },
   {
     path: 'courses', component: CoursesComponent
 
@@ -38,11 +33,9 @@ const appRoute: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    // DashboardComponent,
     LogingComponent,
     CoursesComponent,
     NavbarComponent,
-    // CourseInformationComponent,
     FooterComponent,
     // IdeasCoursesComponent,
     IdeasLoginComponent,
@@ -62,15 +55,9 @@ const appRoute: Routes = [
     MatIconModule,
     MatButtonModule,
     RouterModule.forRoot([
-      // {
-      //   path: 'ideasHome', component: IdeasHomeComponent
-      // },
       {
         path: 'login', component: IdeasLoginComponent
       },
-      // {
-      //   path: 'ideasCourses', component: IdeasCoursesComponent
-      // },
       {
         path: 'courses', component: CoursesComponent
       }
