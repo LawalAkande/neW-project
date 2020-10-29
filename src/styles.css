@@ -63,3 +63,12 @@ body {
 .text-grey {
   color: rgba(185, 185, 185, 1) !important;
 }
+
+::placeholder {
+  color:#B9B9B9 !important;
+  opacity: 1;
+}
+
+.text-dark {
+  color: #484848 !important;
+}
